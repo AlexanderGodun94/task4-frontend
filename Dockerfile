@@ -3,8 +3,7 @@ FROM node:16 AS modules
 WORKDIR /app
 
 COPY ./package*.json ./
-RUN npm i \
-    && yarn install
+RUN yarn install
 
 FROM modules AS app
 
