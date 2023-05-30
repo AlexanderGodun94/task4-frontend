@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { adminApi } from '../../api';
 import { Container } from 'shared/ui';
-import { GetRequestsApiParams, RequestsTable, RequestStatuses } from 'entities/request';
+import { GetRequestsApiParams, RequestsTable } from 'entities/request';
 
 const defaultFiltersState = {
   fromDate: null,
